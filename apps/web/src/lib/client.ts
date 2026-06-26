@@ -1,11 +1,10 @@
 import type { AppType } from '@workspace/api'
 import { hc } from 'hono/client'
 
-export const createClient = (origin: string) =>
-  hc<AppType>(origin, {
-    init: {
-      credentials: 'include',
-    },
-  })
+const origin = import.meta.env.SITE || 'http://localhost:4321'
 
-export type HonoClient = ReturnType<typeof createClient>
+export const client = hc<AppType>(origin, {
+  init: { credentials: 'include' },
+})
+
+export type Client = typeof client
