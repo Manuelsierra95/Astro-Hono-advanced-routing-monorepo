@@ -1,0 +1,21 @@
+{
+  "name": "riego-hono-astro",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "bun run --filter './apps/*' dev"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5"
+  },
+  "workspaces": {
+    "packages": [
+      "apps/*",
+      "packages/*"
+    ],
+    "catalog": {
+      "hono": "^4.12.27"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    // Runtime moderno
+    "target": "ESNext",
+    "lib": ["ESNext"],
+    "module": "ESNext",
+
+    // Resolución moderna (clave para Astro + Hono)
+    "moduleResolution": "bundler",
+    "verbatimModuleSyntax": true,
+    "moduleDetection": "force",
+
+    // JSX (solo afecta donde se use)
+    "jsx": "react-jsx",
+
+    // Interop
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+
+    // DX
+    "strict": true,
+    "skipLibCheck": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "noFallthroughCasesInSwitch": true,
+
+    // Importante
+    "noEmit": true,
+
+    // Opcionales según gusto
+    "noUnusedLocals": false,
+    "noUnusedParameters": false
+  }
+}
