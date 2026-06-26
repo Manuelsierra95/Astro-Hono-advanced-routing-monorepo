@@ -3,7 +3,9 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "bun run --filter './apps/*' dev"
+    "dev": "bun run --filter './apps/*' dev",
+    "build": "bun run --filter './apps/*' build",
+    "start": "bun run --filter './apps/*' start"
   },
   "devDependencies": {
     "@types/bun": "latest",

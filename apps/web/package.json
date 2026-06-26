@@ -8,12 +8,14 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "start": "bun run ./dist/server/entry.mjs",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^7.0.3",
     "@workspace/api": "workspace:*",
+    "@wyattjoh/astro-bun-adapter": "^2.1.0",
+    "astro": "^7.0.3",
     "hono": "catalog:"
   },
   "devDependencies": {
